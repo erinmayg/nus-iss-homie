@@ -4,7 +4,7 @@ FROM node:20-alpine
 ENV ENV PROD
 ENV PORT 8000
 ENV SALT_ROUNDS 10
-ENV DB_CLOUD_URI ${DB_CLOUD_URI}
+ENV DB_CLOUD_URI mongodb+srv://nus-iss-monkeys:3ADNvI1fiW31UXom@nus-iss-homie.urndm50.mongodb.net/?retryWrites=true&w=majority
 
 # Install node packages
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
